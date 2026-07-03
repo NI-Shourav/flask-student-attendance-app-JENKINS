@@ -1,0 +1,7 @@
+docker run -d --name flask-app \
+  --network=my_network \
+  -e DB_HOST=mysql-db \
+  -e DB_USER=root \
+  -e DB_PASSWORD=rootpassword \   [use db password here]
+  -e DB_NAME=attendance_db \
+  -p 5000:5000 flask-app

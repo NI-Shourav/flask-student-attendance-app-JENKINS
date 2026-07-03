@@ -1,0 +1,7 @@
+docker run -d --name mysql-db \
+  --network=my_network \
+  -e MYSQL_ROOT_PASSWORD=rootpassword \  [set password here, i.e. root]
+  -e MYSQL_DATABASE=attendance_db \
+  -p 3306:3306 \
+  mysql:latest
+Wait for MySQL to initialize: 10s
